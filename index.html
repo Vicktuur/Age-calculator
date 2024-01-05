@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-card">
+      <form method="get">
+        <div class="inner-form-card">
+          <!-- Day time frame -->
+          <div class="time-frame">
+            <label for="day">Day</label>
+            <input type="number" placeholder="DD" class="day">
+            <small class="error-day"></small>
+          </div>
+           <!-- Month time frame -->
+          <div class="time-frame">
+            <label for="month">Month</label>
+            <input type="number" placeholder="MM" class="month">
+            <small class="error-month"></small>
+          </div> 
+           <!-- Year time frame -->
+          <div class="time-frame">
+            <label for="year">Year</label>
+            <input type="number" placeholder="YYYY" class="year">
+            <small class="error-year"></small>
+          </div>
+        </div>
+        <div class="button-card">
+          <hr>
+          <button type="submit" class="button"></button>
+        </div>
+      </form>
+      <!-- display -->
+      <div class="display">
+        <h1><span class="yr">-- </span>years</h1>
+        <h1><span class="mn">-- </span>months</h1>
+        <h1><span class="dd">-- </span>days</h1>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

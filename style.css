@@ -1,0 +1,143 @@
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+    background-color: white;
+    width: 600px;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.form-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-form-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.time-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    width: 100px;
+    height: 50px;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 5px 0 5px 0;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 100px;
+}
+
+small {
+    color: hsl(0, 100%, 67%);
+}
+
+.button-card {
+    display: flex;
+    align-items: center;
+}
+
+.button-card hr{
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.button {
+    border-radius: 150%;
+    padding: 2rem;
+    background-color: hsl(259, 100%, 65%);
+    background-image: url(assets/images/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+
+.display span{
+    color: hsl(259, 100%, 65%);
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .container {
+        width: 350px;            
+        border-radius: 1rem 1rem 5rem 1rem;
+    }
+
+    .form-card {
+        padding: 1rem;
+    }
+
+    .inner-form-card {
+        margin-bottom: 5rem;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .button-card {
+        position: relative;
+    }
+
+    .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .display {
+        margin-top: 5rem;
+    }
+
+    .display h1 {
+        font-size: 3.5rem;
+    }
+}
