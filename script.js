@@ -27,27 +27,28 @@ validate = () => {
     
     inputs.forEach((e) => {
         const parent = e.parentElement
-        if (!e.value | e.value === '') {
+        if ( e.value === '') {
             e.style.borderColor = 'hsl(0, 100%, 67%)'
-            parent.querySelector('small').innerText = 'this field is required'
+            parent.querySelector('small').innerText = 'This field is required'
             parent.querySelector('label').style.color = 'hsl(0, 100%, 67%)'
             validator = false
         } else if (input_day.value > 31) {
             input_day.style.borderColor = 'hsl(0, 100%, 67%)'
             input_day.parentElement.querySelector('label').style.color = 'hsl(0, 100%, 67%)'
-            input_day.parentElement.querySelector('small').innerText = 'must be a valid day'
+            input_day.parentElement.querySelector('small').innerText = 'Must be a valid day'
             validator = false
         } else if (input_month.value > 12) {
             input_month.style.borderColor = 'hsl(0, 100%, 67%)'
             input_month.parentElement.querySelector('label').style.color = 'hsl(0, 100%, 67%)'
-            input_month.parentElement.querySelector('small').innerText = 'must be a valid month'
+            input_month.parentElement.querySelector('small').innerText = 'Must be a valid month'
             validator = false
         }  else if (input_year.value > 2024) {
             input_year.style.borderColor = 'hsl(0, 100%, 67%)'
             input_year.parentElement.querySelector('label').style.color = 'hsl(0, 100%, 67%)'
-            input_year.parentElement.querySelector('small').innerText = 'must be in the past'
+            input_year.parentElement.querySelector('small').innerText = 'Must be in the past'
             validator = false
-        }  else {
+        }  else if (e.value) 
+        {
             e.style.borderColor = 'hsl(0, 1%, 44%)'
             parent.querySelector('label').style.color = 'hsl(0, 1%, 44%)'
             parent.querySelector('small').innerText = ''
