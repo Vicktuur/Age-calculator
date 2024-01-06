@@ -67,6 +67,8 @@ input::placeholder {
 
 small {
     color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-style: italic;
 }
 
 .button-card {
@@ -93,6 +95,11 @@ small {
     align-items: center;
     justify-content: center;
 }
+
+.button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
 
 .display h1 {
     font-size: 5rem;
